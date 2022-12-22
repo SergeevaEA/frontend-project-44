@@ -1,5 +1,6 @@
 import questionCalc from './questionCalc.js';
 import questionEven from './questionEven.js';
+import questionGcd from './questionGcd.js';
 import answer from './answer.js';
 
 export default (name, gameName) => {
@@ -13,6 +14,9 @@ export default (name, gameName) => {
     } else if (gameName === 'even') {
       correctAnswer = questionEven();
       gamerAnswer = answer();
+    } else if (gameName === 'gcd') {
+      correctAnswer = questionGcd();
+      gamerAnswer = Number(answer());
     }
     if (gamerAnswer === correctAnswer) {
       isTrue = true;
