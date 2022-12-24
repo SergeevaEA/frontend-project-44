@@ -2,6 +2,7 @@ import questionCalc from './questionCalc.js';
 import questionEven from './questionEven.js';
 import questionGcd from './questionGcd.js';
 import questionProgression from './questionProgression.js';
+import questionPrime from './questionPrime.js';
 import answer from './answer.js';
 
 export default (name, gameName) => {
@@ -21,6 +22,9 @@ export default (name, gameName) => {
     } else if (gameName === 'progression') {
       correctAnswer = questionProgression();
       gamerAnswer = Number(answer());
+    } else if (gameName === 'prime') {
+      correctAnswer = questionPrime();
+      gamerAnswer = answer();
     }
     if (gamerAnswer === correctAnswer) {
       isTrue = true;
