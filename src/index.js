@@ -1,6 +1,7 @@
 import questionCalc from './questionCalc.js';
 import questionEven from './questionEven.js';
 import questionGcd from './questionGcd.js';
+import questionProgression from './questionProgression.js';
 import answer from './answer.js';
 
 export default (name, gameName) => {
@@ -16,6 +17,9 @@ export default (name, gameName) => {
       gamerAnswer = answer();
     } else if (gameName === 'gcd') {
       correctAnswer = questionGcd();
+      gamerAnswer = Number(answer());
+    } else if (gameName === 'progression') {
+      correctAnswer = questionProgression();
       gamerAnswer = Number(answer());
     }
     if (gamerAnswer === correctAnswer) {

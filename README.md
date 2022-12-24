@@ -7,3 +7,4 @@ asciinema:
 https://asciinema.org/a/m9bmsexSzOmPyev4BgwAa7VfH - brain-even
 https://asciinema.org/a/foggQnUbMViY70blJxyKegnab - brain-calc
 https://asciinema.org/a/awlWRie7EUFGNnbQHyKJGr6GE - brain-gcd
+https://asciinema.org/a/usoY93OleEXTUprTLvrjTAdsO - brain-progression
