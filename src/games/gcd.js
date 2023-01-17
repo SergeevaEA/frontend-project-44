@@ -1,8 +1,16 @@
-import cli from '../cli.js';
 import gameLogic from '../index.js';
+import { getRandomNumber, analysisGcd } from '../utils.js';
+
+const description = 'Find the greatest common divisor of given numbers.';
+
+const getQuestionAndAnswer = () => {
+  const number1 = getRandomNumber();
+  const number2 = getRandomNumber();
+  const question = `${number1} ${number2}`;
+  const correctAnswer = analysisGcd(number1, number2);
+  return [question, correctAnswer];
+};
 
 export default () => {
-  const name = cli();
-  console.log('Find the greatest common divisor of given numbers.');
-  gameLogic(name, 'gcd');
+  gameLogic(description, getQuestionAndAnswer);
 };

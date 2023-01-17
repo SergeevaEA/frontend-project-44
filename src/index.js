@@ -1,43 +1,23 @@
-import questionCalc from './questionCalc.js';
-import questionEven from './questionEven.js';
-import questionGcd from './questionGcd.js';
-import questionProgression from './questionProgression.js';
-import questionPrime from './questionPrime.js';
-import answer from './answer.js';
+import readlineSync from 'readline-sync';
 
-export default (name, gameName) => {
-  for (let i = 0; i < 3; i += 1) {
-    let isTrue = false;
-    let gamerAnswer;
-    let correctAnswer;
-    if (gameName === 'calc') {
-      correctAnswer = questionCalc();
-      gamerAnswer = Number(answer());
-    } else if (gameName === 'even') {
-      correctAnswer = questionEven();
-      gamerAnswer = answer();
-    } else if (gameName === 'gcd') {
-      correctAnswer = questionGcd();
-      gamerAnswer = Number(answer());
-    } else if (gameName === 'progression') {
-      correctAnswer = questionProgression();
-      gamerAnswer = Number(answer());
-    } else if (gameName === 'prime') {
-      correctAnswer = questionPrime();
-      gamerAnswer = answer();
-    }
-    if (gamerAnswer === correctAnswer) {
-      isTrue = true;
-    }
-    if (isTrue === true) {
+export const countRounds = 3;
+
+export default (description, getQuestionAndAnswer) => {
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
+  console.log(description);
+  for (let i = 0; i < countRounds; i += 1) {
+    const [question, correctAnswer] = getQuestionAndAnswer();
+    console.log(`Question: ${question}`);
+    const userAnswer = readlineSync.question('Your answer: ');
+    if (correctAnswer === userAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`'${gamerAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
-      break;
-    }
-    if (i === 2) {
-      console.log(`Congratulations, ${name}!`);
+      return;
     }
   }
+  console.log(`Congratulations, ${name}!`);
 };
