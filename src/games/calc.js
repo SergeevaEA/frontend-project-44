@@ -8,7 +8,7 @@ const getQuestionAndAnswer = () => {
   const number2 = getRandomNumber();
   const sign = getRandomSign();
   const question = `${number1} ${sign} ${number2}`;
-  const correctAnswer = analysisCalc(number1, number2, sign);
+  const correctAnswer = analysisCalc(number1, number2, sign).toString();
   return [question, correctAnswer];
 };
 
