@@ -7,7 +7,7 @@ const getQuestionAndAnswer = () => {
   const number1 = getRandomNumber();
   const number2 = getRandomNumber();
   const question = `${number1} ${number2}`;
-  const correctAnswer = analysisGcd(number1, number2);
+  const correctAnswer = analysisGcd(number1, number2).toString();
   return [question, correctAnswer];
 };
 

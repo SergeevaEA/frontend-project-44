@@ -18,7 +18,7 @@ const getQuestionAndAnswer = () => {
   progressionQuestionArray[position] = '..';
   const progressionString = progressionQuestionArray.join(' ');
   const question = progressionString;
-  const correctAnswer = progressionArray[position];
+  const correctAnswer = progressionArray[position].toString();
   return [question, correctAnswer];
 };
 
