@@ -1,9 +1,9 @@
 import gameLogic from '../index.js';
 import getRandomNumber from '../utils.js';
 
-const analysisGcd = (number1, number2) => {
-  let num1 = Number(number1);
-  let num2 = Number(number2);
+const analysisGcd = (numberOne, numberTwo) => {
+  let num1 = Number(numberOne);
+  let num2 = Number(numberTwo);
   while ((num1 !== 0) && (num2 !== 0)) {
     if (num1 > num2) {
       num1 %= num2;
@@ -11,15 +11,14 @@ const analysisGcd = (number1, number2) => {
       num2 %= num1;
     }
   }
-  const gcd = num1 + num2;
-  return gcd;
+  return num1 + num2;
 };
 
 const description = 'Find the greatest common divisor of given numbers.';
 
 const getQuestionAndAnswer = () => {
-  const number1 = getRandomNumber();
-  const number2 = getRandomNumber();
+  const number1 = getRandomNumber(1, 50);
+  const number2 = getRandomNumber(1, 50);
   const question = `${number1} ${number2}`;
   const correctAnswer = analysisGcd(number1, number2).toString();
   return [question, correctAnswer];

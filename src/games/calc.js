@@ -7,17 +7,17 @@ const getRandomSign = () => {
   return (signItems[randomSign]);
 };
 
-const analysisCalc = (number1, number2, sign) => {
-  const num1 = Number(number1);
-  const num2 = Number(number2);
+const analysisCalc = (numberOne, numberTwo, operation) => {
+  const num1 = Number(numberOne);
+  const num2 = Number(numberTwo);
   let number;
-  if (sign === '+') {
+  if (operation === '+') {
     number = num1 + num2;
   }
-  if (sign === '-') {
+  if (operation === '-') {
     number = num1 - num2;
   }
-  if (sign === '*') {
+  if (operation === '*') {
     number = num1 * num2;
   }
   return number;
