@@ -15,5 +15,5 @@ brain-prime:
 publish:
 	npm publish --dry-run
 lint:
-	nix eslint .
+	npx eslint .
 
