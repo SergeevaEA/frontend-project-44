@@ -10,18 +10,18 @@
 
 [![asciicast](https://asciinema.org/a/m9bmsexSzOmPyev4BgwAa7VfH.svg)](https://asciinema.org/a/m9bmsexSzOmPyev4BgwAa7VfH)
 
-### Команда для запуска игры "Проверка на четность": brain-calc;
+### Команда для запуска игры "Калькулятор": brain-calc;
 
 [![asciicast](https://asciinema.org/a/foggQnUbMViY70blJxyKegnab.svg)](https://asciinema.org/a/foggQnUbMViY70blJxyKegnab)
 
-### Команда для запуска игры "Проверка на четность": brain-gcd;
+### Команда для запуска игры "НОД": brain-gcd;
 
 [![asciicast](https://asciinema.org/a/awlWRie7EUFGNnbQHyKJGr6GE.svg)](https://asciinema.org/a/awlWRie7EUFGNnbQHyKJGr6GE)
 
-### Команда для запуска игры "Проверка на четность": brain-progression;
+### Команда для запуска игры "Арифметическая прогрессия": brain-progression;
 
 [![asciicast](https://asciinema.org/a/usoY93OleEXTUprTLvrjTAdsO.svg)](https://asciinema.org/a/usoY93OleEXTUprTLvrjTAdsO)
 
-### Команда для запуска игры "Проверка на четность": brain-prime;
+### Команда для запуска игры "Простое ли число?": brain-prime;
 
 [![asciicast](https://asciinema.org/a/oAFvzm20InNIJYjpQ0UqjOjnD.svg)](https://asciinema.org/a/oAFvzm20InNIJYjpQ0UqjOjnD)
