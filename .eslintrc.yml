@@ -12,3 +12,8 @@ rules:
     - error
     - ignorePackages
     - js: always
+  semi:
+  - error
+  - never
+
+
