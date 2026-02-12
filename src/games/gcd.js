@@ -7,7 +7,8 @@ const analysisGcd = (numberOne, numberTwo) => {
   while ((num1 !== 0) && (num2 !== 0)) {
     if (num1 > num2) {
       num1 %= num2
-    } else {
+    }
+    else {
       num2 %= num1
     }
   }

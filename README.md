@@ -1,6 +1,10 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/SergeevaEA/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/SergeevaEA/frontend-project-44/actions)
 
+### Качество кода
+
+[![Maintainability](https://qlty.sh/gh/SergeevaEA/projects/frontend-project-44/maintainability.svg)](https://qlty.sh/gh/SergeevaEA/projects/frontend-project-44)
+
 # Mind games
 
 5 математических игр, запускаемых через терминал
