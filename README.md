@@ -1,8 +1,7 @@
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/SergeevaEA/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/SergeevaEA/frontend-project-44/actions)
+[![Actions Status](https://github.com/SergeevaEA/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SergeevaEA/frontend-project-44/actions/workflows/hexlet-check.yml)
 
-### Качество кода
-
+### Качество кода:
 [![Maintainability](https://qlty.sh/gh/SergeevaEA/projects/frontend-project-44/maintainability.svg)](https://qlty.sh/gh/SergeevaEA/projects/frontend-project-44)
 
 # Mind games
