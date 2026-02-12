@@ -1,6 +1,3 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/SergeevaEA/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/SergeevaEA/frontend-project-44/actions)
-
 # Mind games
 
 5 математических игр, запускаемых через терминал
@@ -56,8 +53,8 @@ make install
 
 ## Команды для запуска игр
 
-"Проверка на четность": brain-even
-"Калькулятор": brain-calc
-"Наибольший общий делитель": brain-gcd
-"Арифметическая прогрессия": brain-progression
-"Простое ли число?": brain-prime
+* "Проверка на четность": brain-even
+* "Калькулятор": brain-calc
+* "Наибольший общий делитель": brain-gcd
+* "Арифметическая прогрессия": brain-progression
+* "Простое ли число?": brain-prime
